@@ -23,6 +23,8 @@
 
 <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
 
+<canvas class="sky" id="sky" aria-hidden="true"></canvas>
+
 <!-- ───────── NAV ───────── -->
 <header class="nav" id="nav">
   <div class="nav__bar">
@@ -55,7 +57,6 @@
 
 <!-- ═════════ HERO ═════════ -->
 <section class="hero" id="top">
-  <canvas class="hero__sky" id="sky" aria-hidden="true"></canvas>
   <div class="hero__shot" aria-hidden="true">
     <img src="assets/img/team_group.jpg" width="1887" height="1131" alt="" fetchpriority="high">
   </div>
@@ -66,7 +67,7 @@
       <span class="sr">CHARGE</span>
     </h1>
     <p class="hero__org" data-i18n="hero.org">Cerrahpaşa Havacılık ve Ar-Ge Takımı</p>
-    <p class="hero__line" data-i18n="hero.tag">Bir uydunun yapabildiği her şeyi, bir kutunun içine sığdırıyoruz.</p>
+    <p class="hero__line" data-i18n="hero.tag">Tasarlıyoruz. Üretiyoruz. Uçuruyoruz.</p>
   </div>
 
   <div class="rail" aria-hidden="true">
@@ -79,34 +80,12 @@
   </div>
 </section>
 
-<!-- ═════════ SAYILAR ═════════ -->
-<section class="figures" aria-label="Öne çıkan sayılar">
-  <div class="shell figures__row">
-    <div class="fig">
-      <b data-count="99.24" data-decimals="2">99.24</b>
-      <span data-i18n="fig1">2026 CanSat PDR puanımız — Türkiye 3., dünya 8.</span>
-    </div>
-    <div class="fig">
-      <b data-count="41">41</b>
-      <span data-i18n="fig2">2025'te CanSat finaline kalan takımdan biriyiz</span>
-    </div>
-    <div class="fig">
-      <b data-count="1060">1060</b>
-      <span data-i18n="fig3">TEKNOFEST 2023'te yarışan takım — finaldeki 80 içindeydik</span>
-    </div>
-    <div class="fig">
-      <b data-count="6">6</b>
-      <span data-i18n="fig4">2020'den bu yana kesintisiz TEKNOFEST yılı</span>
-    </div>
-  </div>
-</section>
-
 <!-- ═════════ TAKIM ═════════ -->
 <section class="band band--paper" id="about">
   <div class="shell split">
     <div class="split__text">
       <p class="tag"><i>01</i><span data-i18n="about.tag">Takım</span></p>
-      <h2 class="head" data-i18n="about.h">Mühendisliği<br>okulda değil,<br>atölyede öğreniyoruz.</h2>
+      <h2 class="head" data-i18n="about.h">Biz Kimiz?</h2>
       <p class="say" data-i18n="about.p1">CHARGE, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi öğrencilerinden oluşan bir havacılık ve Ar-Ge takımıdır. İnsansız hava araçları ve model uydu sistemleri üzerine ulusal ve uluslararası yarışmalara hazırlanıyoruz.</p>
       <p class="say" data-i18n="about.p2">2020'den bu yana her yıl TEKNOFEST finallerinde yer aldık. 2025'te CanSat yarışmasıyla ülkemizi ABD'de temsil ettik.</p>
 
@@ -122,7 +101,7 @@
       <img src="assets/img/hardware_bench.jpg" width="1600" height="800" loading="lazy"
            alt="Takımın ürettiği model uydu, kupa ve döner kanat İHA bir tezgâh üzerinde yan yana"
            data-i18n-attr="alt:about.alt">
-      <figcaption data-i18n="about.cap">Beş yılın çıktısı: model uydular, İHA'lar ve kazanılan kupalar</figcaption>
+      <figcaption data-i18n="about.cap">Takımın ürettiği model uydu ve İHA sistemleri</figcaption>
     </figure>
   </div>
 </section>
@@ -152,8 +131,8 @@
 <section class="band band--ink" id="cansat">
   <div class="shell">
     <p class="tag tag--on"><i>02</i><span data-i18n="sat.tag">Sistem</span></p>
-    <h2 class="head head--on" data-i18n="sat.h">Bir teneke kutu<br>büyüklüğünde uydu.</h2>
-    <p class="say say--on say--wide" data-i18n="sat.p">Model uydu (CanSat), gerçek bir uydunun tüm alt sistemlerini küçük bir gövdeye sığdıran bir mühendislik projesidir. Roketle irtifaya çıkarılır; ayrıldığı andan yere temas edene kadar topladığı veriyi yer istasyonuna aktarır.</p>
+    <h2 class="head head--on" data-i18n="sat.h">Model Uydu Nedir?</h2>
+    <p class="say say--on say--wide" data-i18n="sat.p">Model uydu (CanSat), gerçek bir uydunun tüm alt sistemlerini — güç, haberleşme, sensörler ve iniş sistemi — küçük bir gövdeye sığdıran bir mühendislik projesidir. Roketle irtifaya çıkarılır, iniş sırasında topladığı verileri yer istasyonuna iletir.</p>
   </div>
 
   <div class="shell sat">
@@ -231,8 +210,8 @@
 <!-- ═════════ GÖREV PROFİLİ ═════════ -->
 <section class="band band--ink band--tight" id="profile">
   <div class="shell">
-    <p class="tag tag--on"><i>03</i><span data-i18n="mp.tag">Görev profili</span></p>
-    <h2 class="head head--on head--sm" data-i18n="mp.h">Kalkıştan yere temasa.</h2>
+    <p class="tag tag--on"><i>03</i><span data-i18n="mp.tag">Uçuş</span></p>
+    <h2 class="head head--on head--sm" data-i18n="mp.h">Görev Profili</h2>
   </div>
   <div class="track" id="track">
     <svg viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="mpT">
@@ -262,8 +241,8 @@
 <!-- ═════════ UÇUŞ KAYDI ═════════ -->
 <section class="band band--paper" id="record">
   <div class="shell">
-    <p class="tag"><i>04</i><span data-i18n="rec.tag">Uçuş kaydı</span></p>
-    <h2 class="head" data-i18n="rec.h">Beş yıl, dört yarışma,<br>iki kıta.</h2>
+    <p class="tag"><i>04</i><span data-i18n="rec.tag">Sicil</span></p>
+    <h2 class="head" data-i18n="rec.h">Uçuş Kaydı</h2>
   </div>
 
   <!-- CanSat -->
@@ -276,17 +255,17 @@
 
     <div class="marks">
       <div class="mark">
-        <b>99<i>/100</i></b>
+        <b><span data-count="99">99</span><i>/100</i></b>
         <span data-i18n="m1.k">2025 PDR</span>
         <em data-i18n="m1.v">Türkiye 1. · Dünya 2.</em>
       </div>
       <div class="mark">
-        <b>96<i>/100</i></b>
+        <b><span data-count="96">96</span><i>/100</i></b>
         <span data-i18n="m2.k">2025 CDR</span>
         <em data-i18n="m2.v">Türkiye 1.</em>
       </div>
       <div class="mark mark--hi">
-        <b>99.24</b>
+        <b><span data-count="99.24" data-decimals="2">99.24</span></b>
         <span data-i18n="m3.k">2026 PDR</span>
         <em data-i18n="m3.v">Türkiye 3. · Dünya 8.</em>
       </div>
@@ -381,7 +360,7 @@
 <section class="band band--ink" id="goals">
   <div class="shell">
     <p class="tag tag--on"><i>05</i><span data-i18n="go.tag">Yol haritası</span></p>
-    <h2 class="head head--on" data-i18n="go.h">2027'de<br>ne yapacağız.</h2>
+    <h2 class="head head--on" data-i18n="go.h">2027 Hedeflerimiz</h2>
   </div>
 
   <ol class="plan shell">
@@ -421,14 +400,14 @@
   <div class="shell split split--rev">
     <div class="split__text">
       <p class="tag"><i>06</i><span data-i18n="sp.tag">Sponsorluk</span></p>
-      <h2 class="head" data-i18n="sp.h">Bu işi<br>destekle yapıyoruz.</h2>
-      <p class="say" data-i18n="sp.p">Araçlarımızın üretimi, yarışmalara ulaşımımız ve test süreçlerimiz tamamen destekle yürüyor. ABD'deki CanSat ve AUVSI SUAS yarışmalarına ekibimizi ve araçlarımızı götürebilmek, elektronik donanımı yedekleriyle temin edebilmek ve projeye rapor tarihlerinden önce başlayabilmek için sponsora ihtiyaç duyuyoruz.</p>
+      <h2 class="head" data-i18n="sp.h">Sponsorumuz Olun</h2>
+      <p class="say" data-i18n="sp.p">Araçlarımızın üretimi, yarışmalara katılımımız ve test süreçlerimiz sponsor desteğiyle yürüyor. Kompozit ve elektronik malzemeleri yedekleriyle temin edebilmek, ekibimizi ve araçlarımızı yarışma alanlarına ulaştırabilmek ve projeye rapor teslim tarihlerinden önce başlayabilmek için desteğinize ihtiyaç duyuyoruz.</p>
 
       <dl class="ways">
         <div><dt data-i18n="w.1t">Maddi</dt><dd data-i18n="w.1d">Araçların tamamlanması ve yurt içi/dışı yarışma katılımı için bütçe.</dd></div>
         <div><dt data-i18n="w.2t">Üretim</dt><dd data-i18n="w.2d">Malzeme listemizdeki parça ve ekipmanların yedekleriyle temini ya da üretimi.</dd></div>
         <div><dt data-i18n="w.3t">Medya</dt><dd data-i18n="w.3d">Tanıtım ve yarışma içeriklerimizin kendi mecralarınızda paylaşılması.</dd></div>
-        <div><dt data-i18n="w.4t">Lojistik</dt><dd data-i18n="w.4d">ABD'deki yarışmalar için kargo, ulaşım ve konaklama desteği.</dd></div>
+        <div><dt data-i18n="w.4t">Lojistik</dt><dd data-i18n="w.4d">Araç ve ekiplerimizin yarışma alanlarına ulaşımı için kargo, ulaşım ve konaklama desteği.</dd></div>
       </dl>
 
       <a class="cta" href="#contact" data-i18n="sp.cta">Bize ulaşın</a>
@@ -446,9 +425,9 @@
 <!-- ═════════ İLETİŞİM ═════════ -->
 <section class="band band--ink" id="contact">
   <div class="shell">
-    <p class="tag tag--on"><i>07</i><span data-i18n="co.tag">İletişim</span></p>
-    <h2 class="head head--on" data-i18n="co.h">Konuşalım.</h2>
-    <p class="say say--on say--wide" data-i18n="co.p">Sponsorluk, iş birliği ya da takıma katılmak için doğrudan birim kaptanlarımıza yazabilirsiniz.</p>
+    <p class="tag tag--on"><i>07</i><span data-i18n="co.tag">Bağlantı</span></p>
+    <h2 class="head head--on" data-i18n="co.h">İletişim</h2>
+    <p class="say say--on say--wide" data-i18n="co.p">Sponsorluk, iş birliği veya takıma katılım için birim kaptanlarımıza ulaşabilirsiniz.</p>
 
     <div class="people">
       <article>
@@ -485,7 +464,6 @@
 <footer class="foot">
   <div class="shell">
     <i class="wordmark foot__mark" aria-hidden="true"></i>
-    <p class="foot__thanks" data-i18n="ft.t">Desteğiniz için teşekkür ederiz.</p>
     <p class="foot__hash">#chargetofuture</p>
   </div>
 </footer>

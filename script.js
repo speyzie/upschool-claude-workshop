@@ -18,23 +18,19 @@
       'nav.goals': 'Hedefler', 'nav.sponsor': 'Sponsorluk', 'nav.contact': 'İletişim',
 
       'hero.org': 'Cerrahpaşa Havacılık ve Ar-Ge Takımı',
-      'hero.tag': 'Bir uydunun yapabildiği her şeyi, bir kutunun içine sığdırıyoruz.',
+      'hero.tag': 'Tasarlıyoruz. Üretiyoruz. Uçuruyoruz.',
 
       'rail.k1': 'Görev', 'rail.k2': 'Kategori', 'rail.v2': 'Model Uydu',
       'rail.k3': 'Durum', 'rail.v3': 'Hazırlık',
       'rail.k4': 'Üs', 'rail.v4': 'İstanbul · 41.0082°N',
 
-      'fig1': '2026 CanSat PDR puanımız — Türkiye 3., dünya 8.',
-      'fig2': '2025’te CanSat finaline kalan takımdan biriyiz',
-      'fig3': 'TEKNOFEST 2023’te yarışan takım — finaldeki 80 içindeydik',
-      'fig4': '2020’den bu yana kesintisiz TEKNOFEST yılı',
 
       'about.tag': 'Takım',
-      'about.h': 'Mühendisliği<br>okulda değil,<br>atölyede öğreniyoruz.',
+      'about.h': 'Biz Kimiz?',
       'about.p1': 'CHARGE, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi öğrencilerinden oluşan bir havacılık ve Ar-Ge takımıdır. İnsansız hava araçları ve model uydu sistemleri üzerine ulusal ve uluslararası yarışmalara hazırlanıyoruz.',
       'about.p2': '2020’den bu yana her yıl TEKNOFEST finallerinde yer aldık. 2025’te CanSat yarışmasıyla ülkemizi ABD’de temsil ettik.',
       'about.alt': 'Takımın ürettiği model uydu, kupa ve döner kanat İHA bir tezgâh üzerinde yan yana',
-      'about.cap': 'Beş yılın çıktısı: model uydular, İHA’lar ve kazanılan kupalar',
+      'about.cap': 'Takımın ürettiği model uydu ve İHA sistemleri',
       'u1': 'Makine Mühendisliği', 'u2': 'Elektrik-Elektronik Mühendisliği',
       'u3': 'Endüstri Mühendisliği', 'u4': 'Bilgisayar Mühendisliği',
 
@@ -45,8 +41,8 @@
       'viz.d': 'İHA ve model uydu sistemlerinin elektronik, yazılım ve mekanik alt sistemlerini özgün fikirlerle geliştirmek; yerli kumanda, uçuş kontrol kartı, RF ekipmanları ve yer kontrol istasyonunu takımımız bünyesinde üretmek.',
 
       'sat.tag': 'Sistem',
-      'sat.h': 'Bir teneke kutu<br>büyüklüğünde uydu.',
-      'sat.p': 'Model uydu (CanSat), gerçek bir uydunun tüm alt sistemlerini küçük bir gövdeye sığdıran bir mühendislik projesidir. Roketle irtifaya çıkarılır; ayrıldığı andan yere temas edene kadar topladığı veriyi yer istasyonuna aktarır.',
+      'sat.h': 'Model Uydu Nedir?',
+      'sat.p': 'Model uydu (CanSat), gerçek bir uydunun tüm alt sistemlerini — güç, haberleşme, sensörler ve iniş sistemi — küçük bir gövdeye sığdıran bir mühendislik projesidir. Roketle irtifaya çıkarılır, iniş sırasında topladığı verileri yer istasyonuna iletir.',
       'sat.svg': 'Model uydu alt sistemleri şeması',
       'sat.alt1': 'Model uydunun iç yapısı: taşıyıcı plaka, karbon çubuklar ve kablolama',
       'sat.alt2': 'Takımın kendi tasarladığı yuvarlak baskı devre kartı',
@@ -58,13 +54,13 @@
       's3.t': 'Sensörler',    's3.d': 'Basınç, sıcaklık, konum ve yönelim verisini görev boyunca ölçer ve kaydeder.',
       's4.t': 'Güç',          's4.d': 'Batarya ve güç dağıtımı; tüm alt sistemleri görev süresince besler.',
 
-      'mp.tag': 'Görev profili',
-      'mp.h': 'Kalkıştan yere temasa.',
+      'mp.tag': 'Uçuş',
+      'mp.h': 'Görev Profili',
       'mp.svg': 'Görev profili: kalkış, apoje, ayrılma, iniş ve yere temas',
       'w1': 'KALKIŞ', 'w2': 'APOJE', 'w3': 'AYRILMA', 'w4': 'VERİ AKTARIMI', 'w5': 'YERE TEMAS',
 
-      'rec.tag': 'Uçuş kaydı',
-      'rec.h': 'Beş yıl, dört yarışma,<br>iki kıta.',
+      'rec.tag': 'Sicil',
+      'rec.h': 'Uçuş Kaydı',
       'rec.cs.w': 'Uluslararası Model Uydu Yarışması · Virginia, ABD',
       'rec.cs.p': '2025’te <b>Auto-Gyro Descender</b> görevine katıldık. Yüzlerce takım arasından <b>finale kalan 41 takımdan biri</b> olarak tüm görevleri yerine getirdik ve yarışma sertifikalarımızı aldık.',
       'm1.k': '2025 PDR', 'm1.v': 'Türkiye 1. · Dünya 2.',
@@ -97,32 +93,30 @@
       'r.a4': 'Takım üyesi sabit kanat insansız hava aracını sahada taşıyor',
 
       'go.tag': 'Yol haritası',
-      'go.h': '2027’de<br>ne yapacağız.',
+      'go.h': '2027 Hedeflerimiz',
       'g1': 'Model Uydu kategorisinde ÖTR ve KTR aşamalarını eksiksiz tamamlayıp finale kalmak; 2020’den bu yana süren final uçuşu başarımızı sürdürmek.',
       'g2': 'PDR, CDR ve FRR aşamalarını tamamlayıp uçuşa gitmek. Tüm görevleri eksiksiz yerine getirerek genel sıralamada 1. olmak.',
       'g3': 'Yerli ve milli teknolojilerimizle ABD’de görev uçuşunu tamamlayıp dereceyle dönmek.',
       'g4': '2026’daki ikinciliğimizi geçerek İstanbul’da ve ulusal finalde 1. olmak.',
 
       'sp.tag': 'Sponsorluk',
-      'sp.h': 'Bu işi<br>destekle yapıyoruz.',
-      'sp.p': 'Araçlarımızın üretimi, yarışmalara ulaşımımız ve test süreçlerimiz tamamen destekle yürüyor. ABD’deki CanSat ve AUVSI SUAS yarışmalarına ekibimizi ve araçlarımızı götürebilmek, elektronik donanımı yedekleriyle temin edebilmek ve projeye rapor tarihlerinden önce başlayabilmek için sponsora ihtiyaç duyuyoruz.',
+      'sp.h': 'Sponsorumuz Olun',
+      'sp.p': 'Araçlarımızın üretimi, yarışmalara katılımımız ve test süreçlerimiz sponsor desteğiyle yürüyor. Kompozit ve elektronik malzemeleri yedekleriyle temin edebilmek, ekibimizi ve araçlarımızı yarışma alanlarına ulaştırabilmek ve projeye rapor teslim tarihlerinden önce başlayabilmek için desteğinize ihtiyaç duyuyoruz.',
       'w.1t': 'Maddi',   'w.1d': 'Araçların tamamlanması ve yurt içi/dışı yarışma katılımı için bütçe.',
       'w.2t': 'Üretim',  'w.2d': 'Malzeme listemizdeki parça ve ekipmanların yedekleriyle temini ya da üretimi.',
       'w.3t': 'Medya',   'w.3d': 'Tanıtım ve yarışma içeriklerimizin kendi mecralarınızda paylaşılması.',
-      'w.4t': 'Lojistik','w.4d': 'ABD’deki yarışmalar için kargo, ulaşım ve konaklama desteği.',
+      'w.4t': 'Lojistik','w.4d': 'Araç ve ekiplerimizin yarışma alanlarına ulaşımı için kargo, ulaşım ve konaklama desteği.',
       'sp.cta': 'Bize ulaşın',
       'sp.alt': 'CHARGE takımı TEKNOFEST fuar standında araçlarının yanında',
       'sp.cap': 'TEKNOFEST standımız',
 
-      'co.tag': 'İletişim',
-      'co.h': 'Konuşalım.',
-      'co.p': 'Sponsorluk, iş birliği ya da takıma katılmak için doğrudan birim kaptanlarımıza yazabilirsiniz.',
+      'co.tag': 'Bağlantı',
+      'co.h': 'İletişim',
+      'co.p': 'Sponsorluk, iş birliği veya takıma katılım için birim kaptanlarımıza ulaşabilirsiniz.',
       'co.r1': 'Elektronik Birim Kaptanı',
       'co.r2': 'Yazılım Birim Kaptanı',
       'co.mail': 'E-posta',
-      'co.uni': 'İstanbul Üniversitesi-Cerrahpaşa · Mühendislik Fakültesi · Avcılar, İstanbul',
-
-      'ft.t': 'Desteğiniz için teşekkür ederiz.'
+      'co.uni': 'İstanbul Üniversitesi-Cerrahpaşa · Mühendislik Fakültesi · Avcılar, İstanbul'
     },
 
     en: {
@@ -132,23 +126,19 @@
       'nav.goals': 'Goals', 'nav.sponsor': 'Sponsorship', 'nav.contact': 'Contact',
 
       'hero.org': 'Cerrahpaşa Aviation and R&D Team',
-      'hero.tag': 'Everything a satellite can do, packed into a can.',
+      'hero.tag': 'We design. We build. We fly.',
 
       'rail.k1': 'Mission', 'rail.k2': 'Category', 'rail.v2': 'CanSat',
       'rail.k3': 'Status', 'rail.v3': 'In preparation',
       'rail.k4': 'Base', 'rail.v4': 'Istanbul · 41.0082°N',
 
-      'fig1': 'Our 2026 CanSat PDR score — 3rd in Türkiye, 8th worldwide',
-      'fig2': 'One of the teams that reached the CanSat final in 2025',
-      'fig3': 'Teams at TEKNOFEST 2023 — we were among the 80 finalists',
-      'fig4': 'Consecutive years at TEKNOFEST since 2020',
 
       'about.tag': 'Team',
-      'about.h': 'We learn engineering<br>in the workshop,<br>not the lecture hall.',
+      'about.h': 'Who We Are',
       'about.p1': 'CHARGE is an aviation and R&D team made up of students from the Faculty of Engineering at Istanbul University-Cerrahpaşa. We compete nationally and internationally in unmanned aerial vehicles and model satellite systems.',
       'about.p2': 'We have reached the TEKNOFEST finals every year since 2020. In 2025 we represented Türkiye at the CanSat Competition in the United States.',
       'about.alt': 'A model satellite, a trophy and a rotary wing UAV built by the team, lined up on a bench',
-      'about.cap': 'Five years of output: model satellites, UAVs and the trophies they won',
+      'about.cap': 'Model satellite and UAV systems built by the team',
       'u1': 'Mechanical Engineering', 'u2': 'Electrical &amp; Electronics Engineering',
       'u3': 'Industrial Engineering', 'u4': 'Computer Engineering',
 
@@ -159,8 +149,8 @@
       'viz.d': 'To develop the electronic, software and mechanical subsystems of UAV and model satellite systems with original ideas, and to build our own controller, flight control board, RF equipment and ground control station in house.',
 
       'sat.tag': 'System',
-      'sat.h': 'A satellite the size<br>of a drink can.',
-      'sat.p': 'A model satellite (CanSat) is an engineering project that fits every subsystem of a real satellite into a body the size of a can. It is carried to altitude by a rocket, and from the moment it separates until it touches the ground it streams the data it collects to a ground station.',
+      'sat.h': 'What Is a Model Satellite?',
+      'sat.p': 'A model satellite (CanSat) is an engineering project that fits every subsystem of a real satellite — power, communications, sensors and recovery — into a body the size of a can. It is carried to altitude by a rocket and transmits the data it collects during descent to a ground station.',
       'sat.svg': 'Diagram of model satellite subsystems',
       'sat.alt1': 'Internal structure of the model satellite: carrier plate, carbon rods and wiring',
       'sat.alt2': 'Circular printed circuit board designed by the team',
@@ -172,13 +162,13 @@
       's3.t': 'Sensors',        's3.d': 'Measuring and logging pressure, temperature, position and orientation throughout the mission.',
       's4.t': 'Power',          's4.d': 'Battery and power distribution, feeding every subsystem for the duration of the mission.',
 
-      'mp.tag': 'Mission profile',
-      'mp.h': 'From launch to touchdown.',
+      'mp.tag': 'Flight',
+      'mp.h': 'Mission Profile',
       'mp.svg': 'Mission profile: launch, apogee, separation, descent and touchdown',
       'w1': 'LAUNCH', 'w2': 'APOGEE', 'w3': 'SEPARATION', 'w4': 'TELEMETRY', 'w5': 'TOUCHDOWN',
 
-      'rec.tag': 'Flight record',
-      'rec.h': 'Five years, four competitions,<br>two continents.',
+      'rec.tag': 'Record',
+      'rec.h': 'Flight Record',
       'rec.cs.w': 'International Model Satellite Competition · Virginia, USA',
       'rec.cs.p': 'In 2025 we took part in the <b>Auto-Gyro Descender</b> mission. As <b>one of the 41 teams that reached the final</b> out of hundreds, we completed every mission task and received our competition certificates.',
       'm1.k': '2025 PDR', 'm1.v': '1st in Türkiye · 2nd worldwide',
@@ -211,32 +201,30 @@
       'r.a4': 'A team member carrying the fixed wing unmanned aerial vehicle in the field',
 
       'go.tag': 'Roadmap',
-      'go.h': 'What we will do<br>in 2027.',
+      'go.h': 'Our 2027 Goals',
       'g1': 'To complete the PDR and CDR stages in the Model Satellite category in full and reach the final, continuing the record of final flights we have held since 2020.',
       'g2': 'To complete the PDR, CDR and FRR stages and make it to flight. To carry out every mission task in full and place 1st overall.',
       'g3': 'To complete the mission flight in the United States with our own domestic technologies and return with a placing.',
       'g4': 'To surpass our 2nd place finish of 2026 and take 1st in Istanbul and in the national final.',
 
       'sp.tag': 'Sponsorship',
-      'sp.h': 'We do this<br>on support.',
-      'sp.p': 'Building our vehicles, travelling to competitions and running our test campaigns all depend on support. We need sponsors to take our team and vehicles to the CanSat and AUVSI SUAS competitions in the United States, to source electronic hardware together with spares, and to start work well before report deadlines.',
+      'sp.h': 'Become a Sponsor',
+      'sp.p': 'Building our vehicles, entering competitions and running our test campaigns all depend on sponsor support. We need your help to source composite and electronic materials together with spares, to get our team and vehicles to the competition sites, and to start work well before report deadlines.',
       'w.1t': 'Financial', 'w.1d': 'Budget to finish the vehicles and attend competitions at home and abroad.',
       'w.2t': 'Production','w.2d': 'Supplying the parts and equipment on our materials list with spares, or manufacturing them.',
       'w.3t': 'Media',     'w.3d': 'Sharing our outreach and competition content on your own channels.',
-      'w.4t': 'Logistics', 'w.4d': 'Freight, travel and accommodation support for the competitions in the United States.',
+      'w.4t': 'Logistics', 'w.4d': 'Freight, travel and accommodation support to get our vehicles and teams to the competition sites.',
       'sp.cta': 'Get in touch',
       'sp.alt': 'The CHARGE team at their TEKNOFEST exhibition stand beside their vehicles',
       'sp.cap': 'Our TEKNOFEST stand',
 
-      'co.tag': 'Contact',
-      'co.h': 'Let’s talk.',
-      'co.p': 'For sponsorship, collaboration or joining the team, write directly to our unit captains.',
+      'co.tag': 'Connect',
+      'co.h': 'Contact',
+      'co.p': 'For sponsorship, collaboration or joining the team, reach out to our unit captains.',
       'co.r1': 'Electronics Unit Captain',
       'co.r2': 'Software Unit Captain',
       'co.mail': 'E-mail',
-      'co.uni': 'Istanbul University-Cerrahpaşa · Faculty of Engineering · Avcılar, Istanbul',
-
-      'ft.t': 'Thank you for your support.'
+      'co.uni': 'Istanbul University-Cerrahpaşa · Faculty of Engineering · Avcılar, Istanbul'
     }
   };
 
@@ -279,6 +267,7 @@
     if (burger) burger.setAttribute('aria-label', next === 'tr' ? 'Menü' : 'Menu');
 
     save('charge-lang', next);
+    if (typeof reflow === 'function') reflow();
   }
 
   apply(load('charge-lang') ||
@@ -301,12 +290,12 @@
       if (!w || !h) return;
       cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var n = Math.round(Math.min(w * h / 6200, 340));
+      var n = Math.round(Math.min(w * h / 3600, 560));
       stars = [];
       for (var i = 0; i < n; i++) {
         var z = Math.random();
         stars.push({ x: Math.random() * w, y: Math.random() * h, z: z,
-                     r: 0.35 + z * 1.25, a: 0.18 + z * 0.5, p: Math.random() * 6.28 });
+                     r: 0.4 + z * 1.5, a: 0.3 + z * 0.62, p: Math.random() * 6.28 });
       }
     }
 
@@ -316,7 +305,7 @@
       ctx.clearRect(0, 0, w, h);
       for (var i = 0; i < stars.length; i++) {
         var s = stars[i];
-        var y = s.y - sy * (0.05 + s.z * 0.22);
+        var y = s.y - sy * (0.04 + s.z * 0.30);
         y = ((y % h) + h) % h;
         var a = s.a * (reduced ? 1 : 0.7 + 0.3 * Math.sin(t + s.p));
         ctx.globalAlpha = a < 0 ? 0 : a > 1 ? 1 : a;
@@ -338,11 +327,12 @@
     });
     document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
 
-    var hero = document.querySelector('.hero');
-    if (hero && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (es) {
-        es.forEach(function (e) { e.isIntersecting ? start() : stop(); });
-      }, { threshold: 0 }).observe(hero);
+    // Yıldız alanı sayfanın tamamında; kaydırmaya bağlı sürüklenme için
+    // azaltılmış harekette de yeniden çiz.
+    if (reduced) {
+      window.addEventListener('scroll', function () {
+        requestAnimationFrame(draw);
+      }, { passive: true });
     }
   })();
 
@@ -393,8 +383,7 @@
   /* ─────────── Belirme ─────────── */
 
   var riseSel = '.split__text, .split__shot, .pull, .duo > div, .sat__art, .subs, ' +
-                '.pair figure, .entry, .strip figure, .plan li, .people, .links, ' +
-                '.figures .fig, .track';
+                '.pair figure, .entry, .strip figure, .plan li, .people, .links, .track';
   var risers = [].slice.call(document.querySelectorAll(riseSel));
   risers.forEach(function (el) { el.classList.add('rise'); });
 
@@ -408,6 +397,64 @@
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
     risers.forEach(function (el) { io.observe(el); });
   }
+
+  /* ─────────── Bölüm içi hareket ─────────── */
+
+  // Başlıkları <br> sınırlarında satırlara böl (dil değişince yeniden kurulur)
+  function sliceHeads() {
+    document.querySelectorAll('.head').forEach(function (h) {
+      if (h.querySelector('.ln')) return;
+      var parts = h.innerHTML.split(/<br\s*\/?>/i);
+      h.innerHTML = parts.map(function (p) {
+        return '<span class="ln"><i>' + p.trim() + '</i></span>';
+      }).join('');
+    });
+  }
+
+  // Tek tek izlenecek öğeler: görünür olunca .in alır
+  var stagger = '.head, .tag, .reveal-img, .log tbody tr, .units li, .ways > div, ' +
+                '.plan li, .mark, .pull, .subs li, .links li, .foot__mark';
+
+  function watch() {
+    var items = [].slice.call(document.querySelectorAll(stagger));
+    if (reduced || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var ob = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        // Aynı grubun kardeşleri sırayla gelsin
+        var group = el.parentElement;
+        var idx = group ? [].indexOf.call(group.children, el) : 0;
+        el.style.transitionDelay = Math.min(idx, 6) * 70 + 'ms';
+        el.classList.add('in');
+        ob.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    items.forEach(function (el) { ob.observe(el); });
+  }
+
+  // Maskeli açılma uygulanacak görseller
+  ['.split__shot', '.pair figure', '.strip figure'].forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (f) { f.classList.add('reveal-img'); });
+  });
+
+  // Dil değişince başlıklar yeniden kurulur; ekrandakiler anında görünür kalsın
+  function reflow() {
+    document.querySelectorAll('.head').forEach(function (h) {
+      h.classList.remove('in');
+    });
+    sliceHeads();
+    document.querySelectorAll('.head').forEach(function (h) {
+      var r = h.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) h.classList.add('in');
+    });
+  }
+
+  sliceHeads();
+  watch();
 
   /* ─────────── Sayaçlar ─────────── */
 

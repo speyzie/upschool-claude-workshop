@@ -35,7 +35,7 @@ html{scroll-behavior:smooth; scroll-padding-top:var(--nav-h)}
 
 body{
   margin:0;
-  background:var(--paper);
+  background:var(--void);
   color:var(--ink);
   font:400 17px/1.62 var(--text);
   -webkit-font-smoothing:antialiased;
@@ -65,6 +65,13 @@ a{color:inherit}
 .shell{
   width:100%; max-width:var(--shell);
   margin-inline:auto; padding-inline:var(--gut);
+}
+
+/* ── Yıldız alanı: sayfa boyunca sabit, koyu bölümlerin arkasından görünür ── */
+.sky{
+  position:fixed; inset:0;
+  width:100%; height:100%;
+  z-index:-1; pointer-events:none;
 }
 
 /* ── Kelime markası (PDF'ten vektörleştirildi) ── */
@@ -130,7 +137,7 @@ a{color:inherit}
 .band{padding:clamp(76px,10vw,150px) 0}
 .band--tight{padding-top:0}
 .band--paper{background:var(--paper); color:var(--ink)}
-.band--ink{background:var(--navy); color:var(--on)}
+.band--ink{background:rgba(12,22,58,.88); color:var(--on)}
 .band--ink + .band--ink{padding-top:0}
 
 /* ═══════ NAV ═══════ */
@@ -209,18 +216,17 @@ a{color:inherit}
 /* ═══════ HERO ═══════ */
 
 .hero{
-  position:relative; isolation:isolate;
+  position:relative;
   min-height:100svh;
   display:flex; flex-direction:column; justify-content:flex-end;
   padding:calc(var(--nav-h) + 60px) 0 108px;
-  background:var(--void);
+  background:transparent;
   overflow:hidden;
 }
-.hero__sky{position:absolute; inset:0; width:100%; height:100%; z-index:-3}
-.hero__shot{position:absolute; inset:0; z-index:-2}
+.hero__shot{position:absolute; inset:0; z-index:-3}
 .hero__shot img{width:100%; height:100%; object-fit:cover; object-position:50% 34%}
 .hero::after{
-  content:''; position:absolute; inset:0; z-index:-1;
+  content:''; position:absolute; inset:0; z-index:-2;
   background:
     linear-gradient(180deg, rgba(4,6,15,.82) 0%, rgba(4,6,15,.34) 34%, rgba(4,6,15,.92) 86%),
     linear-gradient(90deg, rgba(4,6,15,.86) 0%, rgba(4,6,15,.18) 62%);
@@ -266,28 +272,6 @@ a{color:inherit}
 .rail em{font:400 12.5px/1 var(--mono); font-style:normal; color:#fff; letter-spacing:.05em}
 
 /* ═══════ SAYILAR ═══════ */
-
-.figures{background:var(--navy-deep); color:var(--on)}
-.figures__row{
-  display:grid; grid-template-columns:repeat(4,1fr);
-  padding-block:clamp(44px,6vw,74px);
-  gap:clamp(20px,3vw,44px);
-}
-.fig{border-top:1px solid var(--rule-on); padding-top:20px}
-.fig b{
-  display:block;
-  font:700 clamp(38px,4.6vw,62px)/1 var(--display);
-  letter-spacing:-.045em;
-  font-variant-numeric:tabular-nums;
-}
-.fig span{
-  display:block; margin-top:14px;
-  font-size:14px; line-height:1.5; color:var(--on-2);
-  max-width:26ch;
-}
-@media (max-width:840px){
-  .figures__row{grid-template-columns:1fr 1fr; gap:30px}
-}
 
 /* ═══════ İKİYE BÖLÜNMÜŞ ═══════ */
 
@@ -498,7 +482,7 @@ a{color:inherit}
 /* ═══════ ŞERİT ═══════ */
 
 .ticker{
-  background:var(--navy-deep); color:var(--on);
+  background:rgba(7,14,40,.86); color:var(--on);
   overflow:hidden; padding:26px 0;
   border-block:1px solid var(--rule-on);
 }
@@ -564,7 +548,7 @@ a{color:inherit}
   border:1px solid var(--rule-on);
   margin-top:clamp(36px,5vw,58px);
 }
-.people article{background:var(--navy); padding:clamp(28px,3.6vw,42px)}
+.people article{background:rgba(12,22,58,.55); padding:clamp(28px,3.6vw,42px)}
 .role{
   font:500 10.5px/1 var(--mono); letter-spacing:.2em;
   text-transform:uppercase; color:var(--cyan); margin:0 0 16px;
@@ -605,20 +589,143 @@ a{color:inherit}
 /* ═══════ FOOTER ═══════ */
 
 .foot{
-  background:var(--void); color:var(--on);
+  background:rgba(4,6,15,.55); color:var(--on);
   padding:clamp(54px,7vw,90px) 0 calc(clamp(34px,4vw,48px) + env(safe-area-inset-bottom,0px));
   overflow:hidden;
 }
 .foot .shell{display:grid; justify-items:center; text-align:center}
 .foot__mark{width:min(880px,92%); color:rgba(255,255,255,.07)}
-.foot__thanks{
-  font:300 clamp(16px,2vw,21px)/1.4 var(--text);
-  color:#D5DCE8; margin:30px 0 0;
-}
 .foot__hash{
-  font:700 clamp(17px,2.4vw,26px)/1 var(--display);
-  letter-spacing:-.01em; color:var(--cyan); margin:16px 0 0;
+  font:800 clamp(30px,6.4vw,84px)/1 var(--display);
+  letter-spacing:-.04em;
+  margin:clamp(26px,4vw,44px) 0 0;
+  background:linear-gradient(96deg, var(--cyan) 0%, #7B8CFF 52%, #C9A6FF 100%);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent;
 }
+@supports not (background-clip:text){ .foot__hash{color:var(--cyan)} }
+
+
+/* ═══════ HAREKET: BÖLÜM İÇİ ═══════ */
+
+/* Başlıklar satır satır belirir */
+.head{overflow:hidden}
+.head .ln{display:block; overflow:hidden}
+.head .ln > i{
+  display:block; font-style:normal;
+  transform:translateY(105%);
+  transition:transform .85s cubic-bezier(.16,.84,.28,1);
+}
+.in .head .ln > i,.head.in .ln > i{transform:none}
+.head .ln:nth-child(2) > i{transition-delay:.08s}
+.head .ln:nth-child(3) > i{transition-delay:.16s}
+
+/* Etiketlerin önündeki numara çizgisi */
+.tag::after{
+  content:''; flex:1; height:1px; max-width:120px;
+  background:currentColor; opacity:.28;
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .9s cubic-bezier(.2,.7,.3,1) .15s;
+}
+.in .tag::after,.tag.in::after{transform:scaleX(1)}
+
+/* Fotoğraflar maskeyle açılır + hafif zoom */
+.reveal-img{overflow:hidden; position:relative}
+.reveal-img img{
+  transform:scale(1.14);
+  transition:transform 1.25s cubic-bezier(.16,.84,.28,1);
+}
+.reveal-img::after{
+  content:''; position:absolute; inset:0;
+  background:var(--navy);
+  transform-origin:right;
+  transition:transform .95s cubic-bezier(.76,0,.24,1);
+}
+.in .reveal-img img,.reveal-img.in img{transform:none}
+.in .reveal-img::after,.reveal-img.in::after{transform:scaleX(0)}
+
+/* Fotoğraf hover: yakınlaştır */
+.split__shot img,.pair img,.strip img{transition:transform .8s cubic-bezier(.16,.84,.28,1)}
+.split__shot:hover img,.pair figure:hover img,.strip figure:hover img{transform:scale(1.045)}
+
+/* Tablo satırları sırayla gelir */
+.log tbody tr{
+  opacity:0; transform:translateY(14px);
+  transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.3,1);
+}
+.log tbody tr.in{opacity:1; transform:none}
+
+/* Birim / destek satırları soldan açılır */
+.units li,.ways > div{
+  opacity:0; transform:translateX(-16px);
+  transition:opacity .55s ease, transform .55s cubic-bezier(.2,.7,.3,1);
+}
+.units li.in,.ways > div.in{opacity:1; transform:none}
+
+/* Hedef satırları: numara ve metin ayrı gelir */
+.plan li b{
+  display:inline-block;
+  transform:translateY(12px); opacity:0;
+  transition:opacity .5s ease, transform .5s cubic-bezier(.2,.7,.3,1);
+}
+.plan li.in b{opacity:1; transform:none}
+.plan li{position:relative; overflow:hidden}
+.plan li::after{
+  content:''; position:absolute; left:0; top:0; height:1px; width:100%;
+  background:var(--cyan); transform:scaleX(0); transform-origin:left;
+  transition:transform .9s cubic-bezier(.2,.7,.3,1);
+}
+.plan li.in::after{transform:scaleX(1)}
+.plan li h3{transition:transform .4s cubic-bezier(.2,.7,.3,1)}
+.plan li:hover h3{transform:translateX(10px)}
+
+/* Skor kartları sırayla */
+.mark{opacity:0; transform:translateY(22px);
+  transition:opacity .65s ease, transform .65s cubic-bezier(.2,.7,.3,1)}
+.mark.in{opacity:1; transform:none}
+.mark:nth-child(2){transition-delay:.1s}
+.mark:nth-child(3){transition-delay:.2s}
+
+/* Alıntı: sol çizgi yukarıdan iner */
+.pull{position:relative}
+.pull::before{
+  content:''; position:absolute; left:0; top:clamp(40px,6vw,72px); bottom:0; width:2px;
+  background:var(--blue); transform:scaleY(0); transform-origin:top;
+  transition:transform .9s cubic-bezier(.2,.7,.3,1);
+  margin-left:-18px;
+}
+.pull.in::before{transform:scaleY(1)}
+
+/* Alt sistem satırları */
+.subs li{
+  opacity:0; transform:translateY(14px);
+  transition:opacity .55s ease, transform .55s cubic-bezier(.2,.7,.3,1);
+}
+.subs li.in{opacity:1; transform:none}
+
+/* İletişim bağlantıları */
+.links li{
+  opacity:0; transform:translateY(12px);
+  transition:opacity .5s ease, transform .5s cubic-bezier(.2,.7,.3,1);
+}
+.links li.in{opacity:1; transform:none}
+
+/* CTA: dolgu soldan kayar */
+.cta{position:relative; overflow:hidden; z-index:0}
+.cta::before{
+  content:''; position:absolute; inset:0; z-index:-1;
+  background:var(--blue); transform:scaleX(0); transform-origin:left;
+  transition:transform .45s cubic-bezier(.2,.7,.3,1);
+}
+.cta:hover::before{transform:scaleX(1)}
+.cta:hover{background:var(--navy); transform:none}
+
+/* Kelime markası footer'da yavaşça nefes alır */
+.foot__mark{
+  transform:scale(.96); opacity:0;
+  transition:transform 1.4s cubic-bezier(.16,.84,.28,1), opacity 1.2s ease;
+}
+.foot__mark.in{transform:none; opacity:1}
 
 /* ═══════ BELİRME ═══════ */
 
@@ -635,6 +742,13 @@ a{color:inherit}
     transition-duration:.001ms!important;
   }
   .rise{opacity:1; transform:none}
+  .head .ln > i,.plan li b,.foot__mark{transform:none!important; opacity:1!important}
+  .tag::after,.plan li::after,.pull::before{transform:none!important}
+  .reveal-img::after{transform:scaleX(0)!important}
+  .reveal-img img{transform:none!important}
+  .log tbody tr,.units li,.ways > div,.mark,.subs li,.links li{
+    opacity:1!important; transform:none!important;
+  }
   .ticker__run,.orbit{animation:none}
   .wp circle,.wp text{opacity:1}
   .cta:hover,.links a:hover,.subs button:hover{transform:none; padding-left:0}
