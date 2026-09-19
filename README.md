@@ -11,6 +11,7 @@ index.html     → sayfanın tüm içeriği
 style.css      → tüm stiller
 script.js      → dil değiştirme, animasyonlar, sayaçlar
 assets/img/    → fotoğraflar
+assets/charge-logo.svg → kelime markası (tanıtım dosyasından vektörleştirildi)
 assets/favicon.svg
 ```
 
@@ -86,6 +87,7 @@ Yayın adresi: `https://speyzie.github.io/upschool-claude-workshop/`
 ## Notlar
 
 - **Renkler** takımın tanıtım dosyasından örneklendi: lacivert `#0C163A`, mavi `#2F6BFF`, camgöbeği `#35B6FF`. `style.css` en üstündeki `:root` bloğundan değiştirilebilir.
-- **Yazı tipleri** Google Fonts: Chakra Petch (başlık), Barlow (gövde), JetBrains Mono (veri).
+- **Kelime markası** `assets/charge-logo.svg` — tanıtım dosyasındaki logodan vektöre çevrildi. CSS `mask` ile kullanıldığı için `color` değeri ne olursa logo o renge boyanır.
+- **Yazı tipleri** Google Fonts: Archivo (başlık), Barlow (gövde), JetBrains Mono (veri/etiket).
 - **Animasyonlar** işletim sisteminde "hareketi azalt" açıksa otomatik kapanır.
 - Sitedeki **her puan ve derece** tanıtım dosyasındaki değerlerle birebir aynıdır.
