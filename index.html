@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHARGE — Cerrahpaşa Havacılık ve Ar-Ge Takımı</title>
+<meta name="description" content="CHARGE, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi öğrencilerinden oluşan havacılık ve Ar-Ge takımı. Model uydu (CanSat) ve İHA sistemleri üzerine ulusal ve uluslararası yarışmalara katılıyoruz.">
+<meta name="theme-color" content="#05070D">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="CHARGE — Cerrahpaşa Havacılık ve Ar-Ge Takımı">
+<meta property="og:description" content="Model uydu ve İHA sistemleri geliştiren öğrenci takımı. TEKNOFEST finalisti, CanSat Competition'da dünya 2.si.">
+<meta property="og:image" content="assets/img/team_group.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Barlow:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap&subset=latin,latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#hero" aria-label="CHARGE — başa dön">CHARGE</a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Bölümler">
+      <a href="#about"   data-i18n="nav.about">Biz Kimiz</a>
+      <a href="#sat"     data-i18n="nav.sat">Uydumuz</a>
+      <a href="#mission" data-i18n="nav.mission">Görev Profili</a>
+      <a href="#record"  data-i18n="nav.record">Uçuş Kaydı</a>
+      <a href="#goals"   data-i18n="nav.goals">Hedefler</a>
+      <a href="#sponsor" data-i18n="nav.sponsor">Sponsorluk</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+
+    <div class="nav__right">
+      <button class="lang" id="langBtn" type="button" aria-label="Switch to English">
+        <span class="lang__on">TR</span><span class="lang__sep">/</span><span class="lang__off">EN</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress"><i id="progress"></i></div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <canvas class="hero__stars" id="stars" aria-hidden="true"></canvas>
+  <div class="hero__photo" aria-hidden="true">
+    <img src="assets/img/team_group.jpg" width="1920" height="1162" alt="">
+  </div>
+  <div class="hud" aria-hidden="true">
+    <i class="hud__c hud__c--tl"></i><i class="hud__c hud__c--tr"></i>
+    <i class="hud__c hud__c--bl"></i><i class="hud__c hud__c--br"></i>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow" data-i18n="hero.eyebrow">İstanbul Üniversitesi-Cerrahpaşa · Mühendislik Fakültesi</p>
+    <h1 class="hero__title" id="heroTitle">CHARGE</h1>
+    <p class="hero__sub" data-i18n="hero.sub">Cerrahpaşa Havacılık ve Ar-Ge Takımı</p>
+    <p class="hero__tag" data-i18n="hero.tag">Tasarlıyoruz. Üretiyoruz. Uçuruyoruz.</p>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#record" data-i18n="hero.cta1">Uçuş kaydımız</a>
+      <a class="btn btn--ghost" href="#sponsor" data-i18n="hero.cta2">Sponsor olun</a>
+    </div>
+  </div>
+
+  <div class="status" aria-hidden="true">
+    <div class="status__track">
+      <span><b data-i18n="status.k1">MİSYON</b><em>CANSAT 2027</em></span>
+      <span><b data-i18n="status.k2">ODAK</b><em data-i18n="status.v2">MODEL UYDU</em></span>
+      <span><b data-i18n="status.k3">DURUM</b><em data-i18n="status.v3">HAZIRLIK</em></span>
+      <span><b data-i18n="status.k4">KONUM</b><em>41.0082°N 28.9784°E</em></span>
+      <span><b data-i18n="status.k5">ETİKET</b><em>#CHARGETOFUTURE</em></span>
+    </div>
+  </div>
+
+  <a class="scrollcue" href="#telemetry" aria-label="Aşağı kaydır">
+    <span></span>
+  </a>
+</section>
+
+<!-- ═══════════ TELEMETRİ ═══════════ -->
+<section class="telemetry" id="telemetry" aria-label="Öne çıkan sayılar">
+  <div class="wrap telemetry__grid">
+    <div class="stat reveal">
+      <b class="stat__val" data-count="99.24" data-decimals="2">99.24</b>
+      <span class="stat__key" data-i18n="stat1.k">2026 CanSat PDR</span>
+      <span class="stat__sub" data-i18n="stat1.s">Türkiye 3. · Dünya 8.</span>
+    </div>
+    <div class="stat reveal">
+      <b class="stat__val" data-count="41">41</b>
+      <span class="stat__key" data-i18n="stat2.k">CanSat 2025 finalisti</span>
+      <span class="stat__sub" data-i18n="stat2.s">Yüzlerce takım arasından</span>
+    </div>
+    <div class="stat reveal">
+      <b class="stat__val" data-count="1060">1060</b>
+      <span class="stat__key" data-i18n="stat3.k">TEKNOFEST 2023 katılımcısı</span>
+      <span class="stat__sub" data-i18n="stat3.s">Finale kalan 80 takımdan biriyiz</span>
+    </div>
+    <div class="stat reveal">
+      <b class="stat__val" data-count="4">4</b>
+      <span class="stat__key" data-i18n="stat4.k">Mühendislik birimi</span>
+      <span class="stat__sub" data-i18n="stat4.s">Makine · EEM · Endüstri · Bilgisayar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BİZ KİMİZ ═══════════ -->
+<section class="sec" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow"><i>01</i> <span data-i18n="about.eyebrow">Takım</span></p>
+      <h2 class="h2" id="aboutTitle" data-i18n="about.title">Biz Kimiz?</h2>
+      <p class="lead" data-i18n="about.p1">CHARGE, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi öğrencilerinden oluşan bir havacılık ve Ar-Ge takımıdır. Kendini havacılık, uzay ve savunma sanayi alanında geliştirmek isteyen azimli öğrencilerden kurulu ekibimiz; insansız hava araçları ve model uydu sistemleri üzerine ulusal ve uluslararası yarışmalara hazırlanıyor.</p>
+      <p class="lead" data-i18n="about.p2">2020'den bu yana her yıl TEKNOFEST finallerinde yer aldık; 2025'te ise CanSat yarışmasıyla ülkemizi ABD'de temsil ettik.</p>
+      <ul class="chips">
+        <li data-i18n="about.d1">Makine Mühendisliği</li>
+        <li data-i18n="about.d2">Elektrik-Elektronik Mühendisliği</li>
+        <li data-i18n="about.d3">Endüstri Mühendisliği</li>
+        <li data-i18n="about.d4">Bilgisayar Mühendisliği</li>
+      </ul>
+    </div>
+    <figure class="shot reveal">
+      <img src="assets/img/hardware_bench.jpg" width="1600" height="800" loading="lazy"
+           alt="CHARGE takımının ürettiği model uydu ve insansız hava araçları bir tezgâh üzerinde sıralanmış" data-i18n-attr="alt:about.img">
+      <figcaption data-i18n="about.cap">Takımın ürettiği model uydu ve İHA sistemleri</figcaption>
+    </figure>
+  </div>
+
+  <!-- Misyon & Vizyon -->
+  <div class="wrap">
+    <blockquote class="quote reveal">
+      <p data-i18n="quote.text">“Dik olarak yükselebilen ve havada asılı kalabilen araç fikri, muhtemelen insanoğlunun uçmayı hayal edişiyle aynı zamanda doğmuştur.”</p>
+      <cite>— Igor Sikorsky, 1938</cite>
+    </blockquote>
+
+    <div class="grid-2 gap">
+      <article class="card reveal">
+        <p class="card__tag" data-i18n="mission.tag">Misyonumuz</p>
+        <p data-i18n="mission.text">“Teknoloji üreten bir Türkiye için nitelikli mühendis” olma yolunda edindiğimiz tecrübe, bilgi ve teknolojiyi insanlık yararına sunmak; çağın gerekliliklerini öngörebilen ve ülkesini ileri taşıyan bir mühendis neslinin yetişmesine katkıda bulunmak.</p>
+      </article>
+      <article class="card reveal">
+        <p class="card__tag" data-i18n="vision.tag">Vizyonumuz</p>
+        <p data-i18n="vision.text">İHA ve model uydu sistemlerinin elektronik, yazılım ve mekanik alt sistemlerini özgün fikirlerle geliştirmek; yerli kumanda, uçuş kontrol kartı, RF ekipmanları ve yer kontrol istasyonunu takımımız bünyesinde üretmek.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ UYDUMUZ ═══════════ -->
+<section class="sec sec--panel" id="sat" aria-labelledby="satTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i>02</i> <span data-i18n="sat.eyebrow">Sistem</span></p>
+    <h2 class="h2 reveal" id="satTitle" data-i18n="sat.title">Model Uydu Nedir?</h2>
+    <p class="lead lead--wide reveal" data-i18n="sat.p1">Model uydu (CanSat), gerçek bir uydunun tüm alt sistemlerini — güç, haberleşme, sensörler ve iniş sistemi — küçük bir gövdeye sığdıran bir mühendislik projesidir. Roketle irtifaya çıkarılır, iniş sırasında topladığı verileri yer istasyonuna iletir.</p>
+
+    <div class="satgrid">
+      <!-- Şematik -->
+      <div class="satdiagram reveal">
+        <div class="orbit" aria-hidden="true"><i class="orbit__sat"></i></div>
+        <svg viewBox="0 0 320 420" class="cansat" role="img" aria-labelledby="cansatSvgTitle">
+          <title id="cansatSvgTitle" data-i18n="sat.svgtitle">Model uydu alt sistemleri şeması</title>
+          <defs>
+            <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2F6BFF" stop-opacity=".30"/>
+              <stop offset="1" stop-color="#35B6FF" stop-opacity=".10"/>
+            </linearGradient>
+          </defs>
+          <!-- paraşüt -->
+          <g class="cs-layer" data-sub="recovery">
+            <path d="M80 70 A80 66 0 0 1 240 70 Z" fill="url(#body)" stroke="#35B6FF" stroke-width="1.5"/>
+            <path d="M80 70 L160 128 M160 70 L160 128 M240 70 L160 128" stroke="#35B6FF" stroke-width="1" opacity=".7"/>
+          </g>
+          <!-- gövde katmanları -->
+          <g class="cs-layer" data-sub="comms">
+            <rect x="104" y="140" width="112" height="56" rx="8" fill="url(#body)" stroke="#2F6BFF" stroke-width="1.5"/>
+            <path d="M160 140 L160 112" stroke="#35B6FF" stroke-width="1.5"/>
+            <circle cx="160" cy="108" r="4" fill="#35B6FF"/>
+          </g>
+          <g class="cs-layer" data-sub="sensors">
+            <rect x="104" y="204" width="112" height="56" rx="8" fill="url(#body)" stroke="#2F6BFF" stroke-width="1.5"/>
+            <circle cx="130" cy="232" r="7" fill="none" stroke="#35B6FF" stroke-width="1.5"/>
+            <rect x="150" y="225" width="14" height="14" fill="none" stroke="#35B6FF" stroke-width="1.5"/>
+            <path d="M178 239 l8 -14 l8 14" fill="none" stroke="#35B6FF" stroke-width="1.5"/>
+          </g>
+          <g class="cs-layer" data-sub="power">
+            <rect x="104" y="268" width="112" height="56" rx="8" fill="url(#body)" stroke="#2F6BFF" stroke-width="1.5"/>
+            <rect x="132" y="288" width="44" height="18" rx="3" fill="none" stroke="#35B6FF" stroke-width="1.5"/>
+            <rect x="176" y="293" width="6" height="8" fill="#35B6FF"/>
+          </g>
+          <!-- taban -->
+          <path d="M104 332 h112 l-14 26 h-84 Z" fill="url(#body)" stroke="#2F6BFF" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <!-- Alt sistemler -->
+      <ul class="subs reveal">
+        <li><button type="button" data-sub="recovery">
+          <b data-i18n="sub.rec">İniş Sistemi</b>
+          <span data-i18n="sub.rec.d">Paraşüt ve iniş düzeneği; aracın kontrollü ve hasarsız yere ulaşmasını sağlar.</span>
+        </button></li>
+        <li><button type="button" data-sub="comms">
+          <b data-i18n="sub.com">Haberleşme</b>
+          <span data-i18n="sub.com.d">Telemetri bağlantısı; iniş boyunca toplanan veriyi yer istasyonuna canlı iletir.</span>
+        </button></li>
+        <li><button type="button" data-sub="sensors">
+          <b data-i18n="sub.sen">Sensörler</b>
+          <span data-i18n="sub.sen.d">Basınç, sıcaklık, konum ve yönelim verisini görev boyunca ölçer ve kaydeder.</span>
+        </button></li>
+        <li><button type="button" data-sub="power">
+          <b data-i18n="sub.pow">Güç</b>
+          <span data-i18n="sub.pow.d">Batarya ve güç dağıtımı; tüm alt sistemleri görev süresince besler.</span>
+        </button></li>
+      </ul>
+    </div>
+
+    <div class="gallery reveal">
+      <figure>
+        <img src="assets/img/cansat_internals.jpg" width="716" height="417" loading="lazy"
+             alt="Model uydunun iç yapısı: taşıyıcı plaka, karbon çubuklar ve kablolama"
+             data-i18n-attr="alt:sat.img1">
+      </figure>
+      <figure>
+        <img src="assets/img/pcb.jpg" width="723" height="417" loading="lazy"
+             alt="Takımın kendi tasarladığı yuvarlak baskı devre kartı"
+             data-i18n-attr="alt:sat.img2">
+      </figure>
+      <figure>
+        <img src="assets/img/cansat_pair.jpg" width="915" height="1100" loading="lazy"
+             alt="İki takım üyesi model uydu gövdesini ve taşıyıcı yapısını tutuyor"
+             data-i18n-attr="alt:sat.img3">
+      </figure>
+    </div>
+
+    <article class="card card--wide reveal">
+      <p class="card__tag" data-i18n="uav.tag">İHA</p>
+      <p data-i18n="uav.text">İnsansız Hava Aracı (İHA), içinde pilot bulunmadan uzaktan kumandayla ya da tamamen otonom olarak uçabilen hava aracıdır. Döner kanat (drone) ve sabit kanat olmak üzere farklı tiplerde tasarlanır; arama kurtarma, çevre izleme ve savunma gibi pek çok alanda görev yapar. Takımımız 2020-2023 arasında bu kategorilerde yarıştı.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════ GÖREV PROFİLİ ═══════════ -->
+<section class="sec" id="mission" aria-labelledby="missionTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i>03</i> <span data-i18n="mis.eyebrow">Görev</span></p>
+    <h2 class="h2 reveal" data-i18n="mis.title" id="missionTitle">Görev Profili</h2>
+    <p class="lead lead--wide reveal" data-i18n="mis.p1">Bir model uydu görevi tek bir yörünge üzerinde okunur: roketle yükseliş, apojede ayrılma, kontrollü iniş ve iniş boyunca kesintisiz veri aktarımı.</p>
+  </div>
+
+  <div class="profile" id="profile">
+    <svg viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="profTitle">
+      <title id="profTitle" data-i18n="mis.svgtitle">Model uydu görev profili: kalkış, apoje, ayrılma, iniş ve yere temas</title>
+      <!-- zemin -->
+      <line x1="0" y1="430" x2="1200" y2="430" stroke="#1C2740" stroke-width="1"/>
+      <!-- yörünge -->
+      <path id="profPath"
+            d="M70 430 C 160 300, 250 140, 390 96 C 470 70, 560 96, 610 150
+               C 660 206, 700 268, 760 310 C 830 358, 930 392, 1130 424"
+            fill="none" stroke="#35B6FF" stroke-width="2.5" stroke-linecap="round"/>
+      <g class="wp" data-p="0">
+        <circle cx="70" cy="430" r="6"/>
+        <text x="70" y="410" data-i18n="wp.1">KALKIŞ</text>
+      </g>
+      <g class="wp" data-p="0.30">
+        <circle cx="392" cy="96" r="6"/>
+        <text x="392" y="74" data-i18n="wp.2">APOJE</text>
+      </g>
+      <g class="wp" data-p="0.52">
+        <circle cx="612" cy="152" r="6"/>
+        <text x="612" y="130" data-i18n="wp.3">AYRILMA</text>
+      </g>
+      <g class="wp" data-p="0.74">
+        <circle cx="762" cy="312" r="6"/>
+        <text x="762" y="290" data-i18n="wp.4">İNİŞ &amp; VERİ AKTARIMI</text>
+      </g>
+      <g class="wp" data-p="1">
+        <circle cx="1130" cy="424" r="6"/>
+        <text x="1130" y="402" data-i18n="wp.5">YERE TEMAS</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════ UÇUŞ KAYDI ═══════════ -->
+<section class="sec sec--panel" id="record" aria-labelledby="recTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i>04</i> <span data-i18n="rec.eyebrow">Sicil</span></p>
+    <h2 class="h2 reveal" id="recTitle" data-i18n="rec.title">Uçuş Kaydı</h2>
+
+    <!-- CanSat -->
+    <div class="block reveal">
+      <h3 class="h3">CanSat Competition</h3>
+      <p class="meta" data-i18n="rec.cansat.meta">Uluslararası Model Uydu Yarışması · Virginia, ABD</p>
+      <p class="lead lead--wide" data-i18n="rec.cansat.p">Her yıl ABD'de düzenlenen uluslararası model uydu yarışmasında 2025'te <b>Auto-Gyro Descender</b> görevine katıldık. Yüzlerce takım arasından <b>finale kalan 41 takımdan biri</b> olarak tüm görevleri yerine getirdik ve yarışma sertifikalarımızı aldık.</p>
+
+      <div class="scores">
+        <div class="score">
+          <b>99<small>/100</small></b>
+          <span data-i18n="sc1.k">2025 PDR</span>
+          <em data-i18n="sc1.s">Türkiye 1. · Dünya 2.</em>
+        </div>
+        <div class="score">
+          <b>96<small>/100</small></b>
+          <span data-i18n="sc2.k">2025 CDR</span>
+          <em data-i18n="sc2.s">Türkiye 1.</em>
+        </div>
+        <div class="score score--hi">
+          <b>99.24</b>
+          <span data-i18n="sc3.k">2026 PDR</span>
+          <em data-i18n="sc3.s">Türkiye 3. · Dünya 8.</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEKNOFEST zaman çizgisi -->
+    <div class="block reveal">
+      <h3 class="h3">TEKNOFEST</h3>
+      <p class="meta" data-i18n="rec.tf.meta">Havacılık, Uzay ve Teknoloji Festivali · 2020'den bu yana</p>
+
+      <ol class="tl">
+        <li class="reveal">
+          <span class="tl__yr">2026</span>
+          <div class="tl__body">
+            <p class="tl__cat" data-i18n="tf26.cat">Model Uydu</p>
+            <p class="tags"><i>PDR 96/100</i><i>CDR 91/100</i></p>
+            <p data-i18n="tf26.d">Model Uydu Yarışması'nda Ön Tasarım Raporu'ndan 96/100, Kritik Tasarım Raporu'ndan 91/100 puan aldık.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl__yr">2023</span>
+          <div class="tl__body">
+            <p class="tl__cat" data-i18n="tf23.cat">Döner &amp; Sabit Kanat İHA</p>
+            <p class="tags"><i data-i18n="tf23.g1">Döner KTR 92/100</i><i data-i18n="tf23.g2">Sabit KTR 80/100</i></p>
+            <p data-i18n="tf23.d">1060 takım arasından <b>finale kalan 80 takımdan biri</b> olduk ve kendi tasarladığımız sintine suyu temizleme görevini tamamladık. Sabit kanat aracımızda tamamen yerli kumanda ve devre sistemi kullandık.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl__yr">2022</span>
+          <div class="tl__body">
+            <p class="tl__cat" data-i18n="tf22.cat">Döner &amp; Sabit Kanat İHA</p>
+            <p class="tags"><i data-i18n="tf22.g1">Döner KTR 85/100</i><i>DTR 88/100</i><i data-i18n="tf22.g3">Sabit KTR 83/100</i></p>
+            <p data-i18n="tf22.d">Döner kanat kategorisinde Detaylı Tasarım Raporu ile <b>4. olduk.</b> Tamamen kompozit üretilen sabit kanat aracımız sergi alanında birçok firmanın ilgisini çekti.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl__yr">2021</span>
+          <div class="tl__body">
+            <p class="tl__cat" data-i18n="tf21.cat">Döner Kanat İHA</p>
+            <p class="tags"><i>KTR 76/100</i><i>DTR 88/100</i></p>
+            <p data-i18n="tf21.d">160 takımdan finale kalan 74 takım içinde, iki görevi de tamamlayabilen 14 takımdan biri olarak <b>8. olduk.</b></p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl__yr">2020</span>
+          <div class="tl__body">
+            <p class="tl__cat" data-i18n="tf20.cat">Döner Kanat İHA</p>
+            <p class="tags"><i>KTR 79/100</i><i>DTR 87/100</i></p>
+            <p data-i18n="tf20.d">Finale kalan 61 takım arasında <b>8. olduk.</b></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Diğer yarışmalar -->
+    <div class="grid-2 gap">
+      <article class="card reveal">
+        <p class="card__tag">AUVSI SUAS</p>
+        <p class="meta" data-i18n="auvsi.meta">Student Unmanned Aerial Systems · ABD</p>
+        <p data-i18n="auvsi.d">2026 başvuru sürecini başarıyla tamamladık.</p>
+      </article>
+      <article class="card reveal">
+        <p class="card__tag">TUA Astro Hackathon</p>
+        <p class="meta" data-i18n="tua.meta">Türkiye Uzay Ajansı · Ankara</p>
+        <p data-i18n="tua.d">İstanbul Avrupa bölgesinde <b>2. olarak</b> ulusal finale kalan 80 takımdan biri olarak küp uydu projemizi Ankara'da jürilere sunduk.</p>
+      </article>
+    </div>
+
+    <div class="gallery gallery--4 reveal">
+      <figure><img src="assets/img/trophy_cansat.jpg" width="710" height="740" loading="lazy" alt="Model uydu ve yanında kazanılan ikincilik kupası" data-i18n-attr="alt:rec.img1"></figure>
+      <figure><img src="assets/img/astro_hackathon.jpg" width="789" height="433" loading="lazy" alt="Takım üyeleri TUA Astro Hackathon sahnesinde" data-i18n-attr="alt:rec.img2"></figure>
+      <figure><img src="assets/img/trophy_team.jpg" width="810" height="433" loading="lazy" alt="Üç takım üyesi kazanılan kupayı birlikte tutuyor" data-i18n-attr="alt:rec.img3"></figure>
+      <figure><img src="assets/img/team_playground.jpg" width="1170" height="835" loading="lazy" alt="Takım araçlarıyla birlikte toplu fotoğrafta" data-i18n-attr="alt:rec.img4"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ MARQUEE ═══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>CANSAT 2027 · TEKNOFEST 2027 · AUVSI SUAS 2027 · TUA ASTRO HACKATHON · #CHARGETOFUTURE · </span>
+    <span>CANSAT 2027 · TEKNOFEST 2027 · AUVSI SUAS 2027 · TUA ASTRO HACKATHON · #CHARGETOFUTURE · </span>
+  </div>
+</div>
+
+<!-- ═══════════ HEDEFLER ═══════════ -->
+<section class="sec" id="goals" aria-labelledby="goalsTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i>05</i> <span data-i18n="go.eyebrow">Yol Haritası</span></p>
+    <h2 class="h2 reveal" id="goalsTitle" data-i18n="go.title">2027 Hedeflerimiz</h2>
+
+    <div class="goals">
+      <article class="goal reveal">
+        <span class="goal__n">01</span>
+        <h3 data-i18n="go1.t">TEKNOFEST 2027</h3>
+        <p data-i18n="go1.d">Model Uydu kategorisinde Ön Tasarım İnceleme ve Kritik Tasarım İnceleme Raporu aşamalarını eksiksiz tamamlayıp finale kalmak; 2020'den bu yana yaptığımız final uçuşlarındaki başarımızı sürdürmek.</p>
+      </article>
+      <article class="goal reveal">
+        <span class="goal__n">02</span>
+        <h3 data-i18n="go2.t">CanSat 2027</h3>
+        <p data-i18n="go2.d">PDR, CDR ve FRR aşamalarını tamamlayıp uçuşa gitmek. Tüm görevleri eksiksiz yerine getirerek genel sıralamada 1. olmak ve ülkemizi temsil etmek.</p>
+      </article>
+      <article class="goal reveal">
+        <span class="goal__n">03</span>
+        <h3 data-i18n="go3.t">AUVSI SUAS 2027</h3>
+        <p data-i18n="go3.d">Yerli ve milli teknolojilerimizle ABD'de görev uçuşunu başarıyla tamamlayıp dereceyle dönmek ve ülkemizi uluslararası arenada temsil etmek.</p>
+      </article>
+      <article class="goal reveal">
+        <span class="goal__n">04</span>
+        <h3 data-i18n="go4.t">TUA Astro Hackathon</h3>
+        <p data-i18n="go4.d">2026 senesindeki 2.lik derecemizi geçerek İstanbul'da ve ulusal finalde 1. olmayı hedefliyoruz.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SPONSORLUK ═══════════ -->
+<section class="sec sec--panel" id="sponsor" aria-labelledby="spTitle">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow"><i>06</i> <span data-i18n="sp.eyebrow">Destek</span></p>
+      <h2 class="h2" id="spTitle" data-i18n="sp.title">Sponsorumuz Olun</h2>
+      <p class="lead" data-i18n="sp.p1">Araçlarımızın üretimi, yarışmalara ulaşımımız ve test süreçlerimiz tamamen destekle yürüyor. ABD'deki CanSat ve AUVSI SUAS yarışmalarına ekibimizi ve araçlarımızı götürebilmek, elektronik donanımı yedekleriyle temin edebilmek ve projeye rapor tarihlerinden önce başlayabilmek için sponsorluğa ihtiyaç duyuyoruz.</p>
+      <ul class="chips chips--sm">
+        <li data-i18n="sp.n1">Kompozit ve gövde malzemeleri</li>
+        <li data-i18n="sp.n2">Uçuş kontrol kartı, RF, anten, PCB</li>
+        <li data-i18n="sp.n3">Ulaşım, kargo ve konaklama</li>
+        <li data-i18n="sp.n4">Yarışma katılım ücretleri</li>
+        <li data-i18n="sp.n5">Test ve geliştirme süreci</li>
+        <li data-i18n="sp.n6">Tanıtım çalışmaları</li>
+      </ul>
+      <a class="btn btn--primary" href="#contact" data-i18n="sp.cta">Bize ulaşın</a>
+    </div>
+
+    <div class="reveal">
+      <div class="support">
+        <article><b data-i18n="su1.t">Maddi Sponsorluk</b><p data-i18n="su1.d">Araçlarımızın tamamlanması ve ekibimizin yurt içi ve yurt dışı yarışmalara katılabilmesi için gerekli bütçeyi sağlayabilirsiniz.</p></article>
+        <article><b data-i18n="su2.t">Üretim Sponsorluğu</b><p data-i18n="su2.d">Malzeme listemizdeki parça ve ekipmanları yedekleriyle temin edebilir ya da üretimini üstlenebilirsiniz.</p></article>
+        <article><b data-i18n="su3.t">Medya Sponsorluğu</b><p data-i18n="su3.d">Takımımızın tanıtım ve yarışma içeriklerini kendi mecralarınızda paylaşarak sürecimizi daha geniş kitlelere ulaştırabilirsiniz.</p></article>
+        <article><b data-i18n="su4.t">Lojistik Desteği</b><p data-i18n="su4.d">Araçlarımızı ve ekiplerimizi ABD'deki yarışmalara götürebilmemiz için gerekli kargo, ulaşım ve konaklama desteğini sağlayabilirsiniz.</p></article>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <figure class="shot shot--wide reveal">
+      <img src="assets/img/booth.jpg" width="1600" height="607" loading="lazy"
+           alt="CHARGE takımı TEKNOFEST fuar standında araçlarının yanında"
+           data-i18n-attr="alt:sp.img">
+    </figure>
+  </div>
+</section>
+
+<!-- ═══════════ İLETİŞİM ═══════════ -->
+<section class="sec" id="contact" aria-labelledby="coTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i>07</i> <span data-i18n="co.eyebrow">Bağlantı</span></p>
+    <h2 class="h2 reveal" id="coTitle" data-i18n="co.title">İletişim</h2>
+
+    <p class="org reveal">
+      <b data-i18n="co.org">İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi</b>
+      <span data-i18n="co.org2">CHARGE · Cerrahpaşa Havacılık ve Ar-Ge Takımı</span>
+    </p>
+
+    <div class="grid-2 gap">
+      <article class="person reveal">
+        <p class="person__role" data-i18n="co.r1">Elektronik Birim Kaptanı</p>
+        <p class="person__name">Arda Sağdıç</p>
+        <a href="tel:+905445777080">+90 544 577 70 80</a>
+        <a href="mailto:ardafiratsagdic@gmail.com">ardafiratsagdic@gmail.com</a>
+      </article>
+      <article class="person reveal">
+        <p class="person__role" data-i18n="co.r2">Yazılım Birim Kaptanı</p>
+        <p class="person__name">Asya Güney</p>
+        <a href="tel:+905078952674">+90 507 895 26 74</a>
+        <a href="mailto:asyaguney14@gmail.com">asyaguney14@gmail.com</a>
+      </article>
+    </div>
+
+    <div class="social reveal">
+      <a href="https://instagram.com/charge_iuc" target="_blank" rel="noopener noreferrer">
+        <span data-i18n="co.ig">Instagram</span><b>@charge_iuc</b>
+      </a>
+      <!-- TODO: LinkedIn sayfanızın tam adresini buraya yapıştırın -->
+      <a href="https://www.linkedin.com/search/results/all/?keywords=CHARGE%20Cerrahpa%C5%9Fa" target="_blank" rel="noopener noreferrer">
+        <span data-i18n="co.li">LinkedIn</span><b>CHARGE</b>
+      </a>
+      <!-- TODO: Takımın tam e-posta adresini buraya yazın (tanıtım dosyasında yalnızca "@chargetofuture" geçiyor) -->
+      <a href="mailto:chargetofuture@gmail.com">
+        <span data-i18n="co.mail">E-posta</span><b>chargetofuture</b>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__mark" aria-hidden="true">CHARGE</p>
+    <p class="foot__thanks" data-i18n="ft.thanks">Desteğiniz için teşekkür ederiz.</p>
+    <p class="foot__tag">#chargetofuture</p>
+    <p class="foot__fine" data-i18n="ft.fine">CHARGE · Cerrahpaşa Havacılık ve Ar-Ge Takımı · İstanbul Üniversitesi-Cerrahpaşa</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
